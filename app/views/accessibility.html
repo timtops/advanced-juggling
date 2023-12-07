@@ -2,45 +2,36 @@
 
 {% set pageName = "Accessibility statement" %}
 
+{% set accessiblityContent %}
+
+# Main heading pageName
+
+paragraphg
+
+## second heading
+
+- bullet 1
+- jshdfjksd
+- dflsfjklsd
+
+### third level hed=ading
+
+1. ksdjksjd
+2. ds;jsldjflksj flsjdljsldjlkjfsd lksjdf
+3. s;dkjlskdj ljlj ldsj lsjl 
+
+ksdjlksdjfs [dfsdfsd](/)
+
+{% endset %}
+
 {% block content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-l">
-      {{ pageName }}
-    </h1>
 
-    <p>The GOV.UK Design System team at the Government Digital Service (<abbr>GDS</abbr>) maintains the following products:</p>
-    <ul class="govuk-list govuk-list--bullet">
-<li><a href="https://design-system.service.gov.uk/">GOV.UK Design System website</a></li>
-<li><a href="https://frontend.design-system.service.gov.uk/">GOV.UK Frontend documentation website</a></li>
-<li><a href="https://github.com/alphagov/govuk-frontend">GOV.UK Frontend codebase</a></li>
-</ul>
-<p>This page explains how the team works to ensure these products are accessible.</p>
-<p>The GOV.UK Prototype Kit website has a separate accessibility statement. <a href="https://prototype-kit.service.gov.uk/docs/accessibility">Read the GOV.UK Prototype Kit website accessibility statement</a>.</p>
-<p><a href="https://design-system.service.gov.uk/community/accessibility-strategy/">Read our accessibility strategy</a> for more information on our current principles and work needed to improve the accessibility of the GOV.UK Design System.</p>
-<p><a href="https://github.com/alphagov/govuk-frontend/blob/main/docs/contributing/test-components-using-accessibility-acceptance-criteria.md">Read about how we test components using accessibility acceptance criteria</a>.</p>
-<h3 class="govuk-heading-m">Accessibility statement</h2>
-<p>This accessibility statement applies to the GOV.UK Design System website at <a href="https://design-system.service.gov.uk/">design-system.service.gov.uk</a>, the GOV.UK Frontend documentation website at <a href="https://frontend.design-system.service.gov.uk/">frontend.design-system.service.gov.uk</a> and the components and patterns from the GOV.UK Frontend codebase which appear in the examples throughout the Design System.</p>
-<p>The GOV.UK Design System team wants as many people as possible to be able to use this website. For example, you should be able to:</p>
-<ul class="govuk-list govuk-list--bullet">
-<li>change colours, contrast levels and fonts</li>
-<li>zoom in up to 400% without the text spilling off the screen</li>
-<li>listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA, TalkBack and VoiceOver)</li>
-<li>navigate most of the website using just a keyboard</li>
-<li>navigate most of the website using just a mouse and on-screen keyboard</li>
-<li>navigate most of the website using speech recognition software</li>
-</ul>
-<p>The team has also made the website text as simple as possible to understand.</p>
-<p>AbilityNet has <a href="https://mcmw.abilitynet.org.uk/">advice on making your device easier to use</a> if you have a disability.</p>
-<h3 class="govuk-heading-m">Feedback and contact information</h3>
-<p>The GOV.UK Design System team is always looking to improve the accessibility of this website. If you find any problems that are not listed on this page or think this website is not meeting accessibility requirements, email the team at <a href="mailto:govuk-design-system-support@digital.cabinet-office.gov.uk">govuk-design-system-support@digital.cabinet-office.gov.uk</a></p>
-<p>The GOV.UK Design System team will review your request and get back to you in 2 working days.</p>
-<h3 class="govuk-heading-m">Enforcement procedure</h3>
-<p>The Government Digital Service (<abbr>GDS</abbr>) is committed to making its websites accessible, in accordance with the <a href="https://www.legislation.gov.uk/uksi/2018/952/contents">Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</a>.</p>
-<p>The Equality and Human Rights Commission (<abbr>EHRC</abbr>) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you contact us with a complaint and you’re not happy with our response, <a href="https://www.equalityadvisoryservice.com/">contact the Equality Advisory and Support Service (<abbr>EASS</abbr>)</a>.</p>
-
+ 
+    {{ accessiblityContent | govukMarkdown(headingsStartWith="l") }}
 
   </div>
 </div>
