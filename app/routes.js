@@ -41,10 +41,16 @@ router.post('/new/country', (req, res) => {
 })
 
 router.post('/new/juggling-balls', (req, res) => {
+
+    if(req.query.returnUrl) {
+        res.redirect(req.query.returnUrl)
+    } else {
+
     if(req.body.new.numberOfBalls == 'None - I cannot juggle') {
     res.redirect('/new/not-eligible')
     } else {
     res.redirect('/new/juggling-trick')
+    }
     }
 })
 
@@ -62,4 +68,9 @@ router.post('/new/juggling-objects', (req, res) => {
     } else {
     res.redirect('/new/check')
     }
+})
+
+
+router.post('/new/check', (req, res) => {
+    res.redirect('/new/confirmation')
 })

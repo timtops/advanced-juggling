@@ -1,0 +1,25 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName = 'Application sent' %}
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    {{ govukPanel({
+      titleText: pageName
+    }) }}
+
+    <p>This is the text at the bottom.</p>
+
+    <h2 class="govuk-heading-m">What happens next?</h2>
+
+    <p>We've sent your application.</p>
+
+
+  </div>
+</div>
+
+{% endblock %}
